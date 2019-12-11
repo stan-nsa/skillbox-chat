@@ -45,7 +45,6 @@ class ServerProtocol(LineOnlyReceiver):
                 for user in self.factory.clients:
                     if user.login.lower() == login.lower():
                         self.sendLine("This login used!!!".encode())
-                        self.connectionLost(self)
                         self.transport.loseConnection()
                         return
 
