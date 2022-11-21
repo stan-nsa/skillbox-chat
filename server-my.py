@@ -7,6 +7,8 @@
 #
 #  Ctrl + Alt + L - форматирование кода
 #
+#
+
 from twisted.internet import reactor
 from twisted.internet.protocol import ServerFactory, connectionDone
 from twisted.protocols.basic import LineOnlyReceiver
